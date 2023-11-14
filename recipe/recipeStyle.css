@@ -1,0 +1,174 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+.cointainer{
+    height:100%;
+    width:100%;
+    overflow-x: hidden;
+    background-image: radial-gradient( circle 321px at 8.3% 75.7%,  rgba(209,247,241,1) 0%, rgba(249,213,213,1) 81% );
+}
+.navcontainer{
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+    width:100vw;
+    min-height:80px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black;
+
+}
+nav{
+    width:100%;
+    padding-right:1.125rem;
+}
+#navlist{
+    width:100%;
+    padding: 15px;
+    /* margin-left: 15px;
+    margin-right: 15px; */
+    list-style: none;
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#navlogo{
+    font-size: 2.5rem;
+    color: black
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
+
+#navitems{
+    display: flex;
+    gap:40px;
+    font-size: 30px;
+    
+}
+
+footer{
+    width:100%
+}
+.footerbox{
+    background-color: rgb(127, 197, 255);
+    width:100%;
+    text-align: center;
+    min-height: 25px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+.footerbox p{
+    color:rgb(63, 18, 2);
+    font-size: 20px;
+   
+    
+
+}
+
+.maincontent{
+    width:70%;
+    margin:auto;
+    border:1px solid black;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    border-radius: 10px;
+    padding:40px;
+    box-shadow: 3px 3px 40px black;
+}
+
+.Item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  
+
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s linear 0s;
+   
+
+}
+
+.rightbox img{
+    width:230px;
+    height:280px;
+    border-radius: 19px;
+    box-shadow: 1px 1px 7px black;
+    transition: all 0.6s  linear  ;
+}
+
+
+
+
+.rightbox:hover{
+    transform: scale(1.1);
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+
+}
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.leftbox h3{
+    font-size: 1rem;
+}
+
+
+.ingridentbox{
+    font-size: 17px;
+}
+
+.recipebox{
+    font-size: 17px;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background-color: rgb(36, 34, 34, 0.713);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    opacity: 0;
+    transition: all 0.3s linear 0s;
+}
+
+.rightbox .overlay span{
+    color: white;
+    font: 1rem;
+}
+
+.rightbox:hover .overlay{
+    opacity: 1;
+}
+
